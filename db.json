@@ -1,0 +1,30 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "NumCamas": "json-server",
+      "estado": "typicode",
+      "fechas": "typicode",
+      "precioNoche": "typicode",
+      "NumPersonas": "typicode",
+      "ubicacion": "typicode",
+      "servicios":{
+        "internet": "",
+        "minibar": "typicode",
+        "jacusi": "typicode",
+        "spa": "typicode",
+        "comida": "typicode"
+      }
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "userName": "some comment",
+      "password": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
