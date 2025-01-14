@@ -2,26 +2,35 @@
   "rooms": [
     {
       "id": 1,
-      "NumCamas": "json-server",
-      "estado": "typicode",
-      "fechas": "typicode",
-      "precioNoche": "typicode",
-      "NumPersonas": "typicode",
-      "ubicacion": "typicode",
-      "servicios":{
-        "internet": "",
-        "minibar": "typicode",
-        "jacusi": "typicode",
-        "spa": "typicode",
-        "comida": "typicode"
-      }
+      "NumCamas": 3,
+      "estado": "Disponible",
+      "precioNoche": 50000,
+      "NumPersonas": 4,
+      "ubicacion": "Bucaramanga",
+      "servicios": {
+        "internet": true,
+        "minibar": true,
+        "jacuzzi": false,
+        "spa": false,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "http",
+        "vista": "",
+        "baño": ""
+      },
+      "reservas": [
+        { "inicio": "2025-01-14", "fin": "2025-01-20", "clienteId": 1 }
+      ]
     }
   ],
   "clients": [
     {
       "id": 1,
-      "userName": "some comment",
-      "password": 1
+      "userName": "jenni",
+      "password": "123",
+      "nombre": "Jennifer Arcs",
+      "email": "jenni@gmail.com"
     }
   ],
   "profile": {
