@@ -20,17 +20,54 @@
         "baño": ""
       },
       "reservas": [
-        { "inicio": "2025-01-14", "fin": "2025-01-20", "clienteId": 1 }
+        {
+          "inicio": "2025-01-14",
+          "fin": "2025-01-20",
+          "clienteId": 1
+        }
       ]
     }
   ],
   "clients": [
     {
       "id": 1,
-      "userName": "jenni",
+      "user": "jenni",
       "password": "123",
-      "nombre": "Jennifer Arcs",
+      "nombre": "Jennifer",
+      "apellido": "Arcs",
       "email": "jenni@gmail.com"
+    },
+    {
+      "user": "emmanuelsan01",
+      "password": "mondongo",
+      "nombre": "Emmanuel",
+      "apellido": "Sánchez",
+      "email": "sonic@gmail.com",
+      "id": 2
+    },
+    {
+      "user": "dArcs",
+      "password": "3333",
+      "nombre": "diana",
+      "apellido": "Arciniegas",
+      "email": "diana@gmail.com",
+      "id": 3
+    },
+    {
+      "user": "dArcs",
+      "password": "333222",
+      "nombre": "diana",
+      "apellido": "Arciniegas",
+      "email": "diana@gmail.com",
+      "id": 4
+    },
+    {
+      "user": "dArcs",
+      "password": "1111",
+      "nombre": "Emmanuel",
+      "apellido": "Arciniegas",
+      "email": "diana@gmail.com",
+      "id": 5
     }
   ],
   "profile": {
