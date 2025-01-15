@@ -95,6 +95,22 @@
       "apellido": "2222",
       "email": "2222",
       "id": 5
+    },
+    {
+      "user": "Chizak",
+      "password": "Ytzhak*·2007!",
+      "nombre": "Ytzhak Dawidh",
+      "apellido": "Carvajal Contreras",
+      "email": "ytzhakgdc@gmail.com",
+      "id": 6
+    },
+    {
+      "user": "emmanuelsan01",
+      "password": "mondongo",
+      "nombre": "Emmanuel",
+      "apellido": "Sánchez",
+      "email": "hedgehog@gmail.com",
+      "id": 7
     }
   ],
   "profile": {
