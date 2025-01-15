@@ -4,29 +4,56 @@
       "id": 1,
       "NumCamas": 3,
       "estado": "Disponible",
-      "precioNoche": 50000,
+      "precioNoche": 500000,
       "NumPersonas": 4,
-      "ubicacion": "Bucaramanga",
+      "ubicacion": "itali",
       "servicios": {
         "internet": true,
-        "minibar": true,
+        "minibar": false,
         "jacuzzi": false,
         "spa": false,
         "comida": true
       },
       "imagenes": {
-        "habitacion": "http",
-        "vista": "",
-        "baño": ""
+        "habitacion": "https://www.momondo.com.co/rimg/himg/c0/f3/49/expedia_group-123248-718cf6-955597.jpg?width=968&height=607&crop=true",
+        "vista": "https://www.momondo.com.co/rimg/himg/88/fb/79/expediav2-123248-3591475457-659215.jpg?width=968&height=607&crop=true",
+        "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
       },
       "reservas": [
         {
-          "inicio": "2025-01-14",
-          "fin": "2025-01-20",
+          "inicio": "",
+          "fin": "",
+          "clienteId": 1
+        }
+      ]
+    },{
+      "id": 2,
+      "NumCamas": 3,
+      "estado": "Disponible",
+      "precioNoche": 700000,
+      "NumPersonas": 4,
+      "ubicacion": "itali",
+      "servicios": {
+        "internet": true,
+        "minibar": false,
+        "jacuzzi": false,
+        "spa": false,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "https://cdn.pixabay.com/photo/2016/09/18/03/28/travel-1677347_1280.jpge",
+        "vista": "https://cdn.pixabay.com/photo/2022/08/20/09/16/tenerife-7398660_1280.jpg",
+        "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
+      },
+      "reservas": [
+        {
+          "inicio": "",
+          "fin": "",
           "clienteId": 1
         }
       ]
     }
+    
   ],
   "clients": [
     {
@@ -44,30 +71,6 @@
       "apellido": "Sánchez",
       "email": "sonic@gmail.com",
       "id": 2
-    },
-    {
-      "user": "dArcs",
-      "password": "3333",
-      "nombre": "diana",
-      "apellido": "Arciniegas",
-      "email": "diana@gmail.com",
-      "id": 3
-    },
-    {
-      "user": "dArcs",
-      "password": "333222",
-      "nombre": "diana",
-      "apellido": "Arciniegas",
-      "email": "diana@gmail.com",
-      "id": 4
-    },
-    {
-      "user": "dArcs",
-      "password": "1111",
-      "nombre": "Emmanuel",
-      "apellido": "Arciniegas",
-      "email": "diana@gmail.com",
-      "id": 5
     }
   ],
   "profile": {
