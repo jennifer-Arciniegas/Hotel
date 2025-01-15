@@ -4,9 +4,9 @@
       "id": 1,
       "NumCamas": 3,
       "estado": "Disponible",
-      "precioNoche": 500000,
+      "precioNoche": 150000,
       "NumPersonas": 4,
-      "ubicacion": "itali",
+      "ubicacion": "Bucaramanga",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -26,7 +26,8 @@
           "clienteId": 1
         }
       ]
-    },{
+    },
+    {
       "id": 2,
       "NumCamas": 3,
       "estado": "Disponible",
@@ -53,7 +54,6 @@
         }
       ]
     }
-    
   ],
   "clients": [
     {
@@ -71,6 +71,30 @@
       "apellido": "Sánchez",
       "email": "sonic@gmail.com",
       "id": 2
+    },
+    {
+      "user": "wwwww",
+      "password": "wwww",
+      "nombre": "daniel",
+      "apellido": "wwww",
+      "email": "wwww",
+      "id": 3
+    },
+    {
+      "user": "ssss",
+      "password": "ssss",
+      "nombre": "sss",
+      "apellido": "ssss",
+      "email": "ssss",
+      "id": 4
+    },
+    {
+      "user": "2222",
+      "password": "2222",
+      "nombre": "222",
+      "apellido": "2222",
+      "email": "2222",
+      "id": 5
     }
   ],
   "profile": {

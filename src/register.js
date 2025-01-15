@@ -18,8 +18,8 @@ function registerUser(){
         })
         .then((Response)=> Response.json())
         .then((data) => {
-            alert("registrado correctamente");
-            window.location.href = "../index.html";
+            window.location.replace("../index.html");
+
         })
         .catch((error) => alert("error al crear usuario") + error)
     })
