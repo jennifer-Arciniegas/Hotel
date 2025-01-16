@@ -40,12 +40,6 @@ menuToggle.addEventListener('click', () => {
     menu.classList.toggle('hidden');
 });
 //-------------------------------------- agregar al catalogo las habitaciones
-let habitaciones = document.getElementById("catalogo");
-habitaciones.style.display = "grid";
-habitaciones.style.gridTemplateColumns = "repeat(4, 1fr)";
-habitaciones.style.gap = "10px";
-
-
 fetch("http://localhost:3000/rooms")
 .then(response => response.json())
 .then(data => {
@@ -53,12 +47,12 @@ fetch("http://localhost:3000/rooms")
     data.forEach(element => {
         // Crear un div para la habitación
         const habitacion = document.createElement("div");
-        habitacion.classList.add("habitacion", "border", "p-4", "m-6", "bg-rose-200", "w-80", "h-96", "rounded-lg", );
+        habitacion.classList.add("habitacion", "border", "p-4", "bg-rose-200", "rounded-lg", "w-full");
 
         // info a la habitación
         habitacion.innerHTML = `
-            <img src="${element.imagenes.habitacion}" alt="Imagen de la habitación" style="width: 100%; height: auto;">
-            <h2>${element.name}</h2>
+            <img src="${element.imagenes.habitacion}" alt="Imagen de la habitación" class="w-full h-auto">
+            <h2 class="text-xl font-semibold">${element.name}</h2>
             <p>Número de camas: ${element.NumCamas}</p>
             <p>Ubicación: ${element.ubicacion}</p>
             <p>Precio por noche: $${element.precioNoche}</p>
@@ -66,7 +60,8 @@ fetch("http://localhost:3000/rooms")
         `;
 
         // Añadir la habitación al catálogo
-        habitaciones.appendChild(habitacion);
+        document.getElementById("catalogo").appendChild(habitacion);
     });
 })
 .catch(error => console.error('Error:', error));
+

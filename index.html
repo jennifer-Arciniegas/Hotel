@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-            <nav class="bg-sky-100 border-gray-200  flex justify-between p-4">
+            <nav class="bg-sky-100 border-gray-200  flex justify-between p-4 gap-4">
                 <div class="max-w-screen-xl ">
                     <span> logo</span> 
                 </div>
@@ -22,14 +22,14 @@
                     
                 </div>
 
-                <div class="hidden md:flex w-full" id="menu">
+                <div class="hidden md:flex w-full " id="menu">
                     <ul class="flex space-x-8 p-4 md:p-0">
                         <li>
-                            <a href="">log in</a>
+                            <button id="abriModal" class="hover:text-indigo-500">log in</button>
                         </li>
-                        <li> <a href="./src/register.html">registo</a></li>
+                        <li> <a href="./src/register.html" class="hover:text-indigo-500">Registro</a></li>
                         <li><a href="">Reservas</a></li>
-                        <li><a href="">contactos</a></li>
+                        <li><a href="">Contactos</a></li>
                     </ul>
                 </div>
             </nav>
@@ -57,14 +57,38 @@
             </div>
            
         </section>
-        <div id="catalogo"  class="grid grid-cols-2 gap-10 w-100 h-96">
-
+        <div id="catalogo" class="grid grid-cols-1 gap-10 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 p-6">
+  
+        </div>
+        
+    </main>
+    
+        <div class="bg-black p-10  flex justify-center">
+            <h3 class="text-white"> CHotel</h3>
+            <br> <br>
+            <h3 class="text-white"> Derechos reservados </h3>
         </div>
 
-        
+        <!--modal-->
+        <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+            <div class="flex justify-center items-center w-full h-full">
+                <div class="bg-white p-6 rounded-lg w-96">
+                    <h2 class="font-semibold">Inicio de sesion</h2>
+                    <form action="" id="login">
+                        <label for="usuario">Usuario: </label>
+                        <input type="text" name="usuario" id="usuario">
+                        <br><br>
+                        <label for="contraseña">Contraseña: </label>
+                        <input type="text" name="contraseña" id="contraseña">
+                        <div class="flex justify-end">
+                            <button type="submit" id="close-modal" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Iniciar sesión</button>
+                        </div>
+                    </form>
+                </div>
 
-       
-    </main>
+            </div>
+        </div>
+    
 </body>
 <script src="./src/home.js"> </script>
 </html>

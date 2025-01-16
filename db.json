@@ -167,6 +167,62 @@
           "clienteId": 1
         }
       ]
+    },
+    {
+      "id": 7,
+      "NumCamas": 1,
+      "name": "Frescura",
+      "Disponible": "Disponible",
+      "precioNoche": 200000,
+      "NumPersonas": 2,
+      "ubicacion": "Albania, Santander",
+      "servicios": {
+        "internet": true,
+        "minibar": false,
+        "jacuzzi": true,
+        "spa": true,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/d5/20/b1/20160702-155155-largejpg.jpg?w=1200&h=-1&s=1",
+        "vista": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/d2/d5/fb/photo0jpg.jpg?w=1200&h=-1&s=1",
+        "baño": " "
+      },
+      "reservas": [
+        {
+          "inicio": "",
+          "fin": "",
+          "clienteId": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "NumCamas": 1,
+      "name": "jardines",
+      "Disponible": "Disponible",
+      "precioNoche": 200000,
+      "NumPersonas": 2,
+      "ubicacion": "Albania, Santander",
+      "servicios": {
+        "internet": true,
+        "minibar": false,
+        "jacuzzi": true,
+        "spa": true,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/225939843.jpg?k=aa5afb388bd757c46cb1b68ec69e2a5eeb32d73f7066af1483b7f23ebc9ca02a&o=&hp=1",
+        "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/362483024.jpg?k=d49232c5f01ddd12e3dffef09841fce1143b7025dcb56499eae7db02761bb4fb&o=&hp=1",
+        "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/362483028.jpg?k=f0cb75b1cc69df786c7d6996346669b9455f5c01bef9dfee38940520305440f4&o=&hp=1"
+      },
+      "reservas": [
+        {
+          "inicio": "",
+          "fin": "",
+          "clienteId": 1
+        }
+      ]
     }
   ],
   "clients": [
