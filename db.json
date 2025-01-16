@@ -3,14 +3,15 @@
     {
       "id": 1,
       "NumCamas": 1,
-      "estado": "Disponible",
+      "name": "Despertar",
+      "Disponible": "Disponible",
       "precioNoche": 150000,
-      "NumPersonas": 4,
-      "ubicacion": "Bucaramanga",
+      "NumPersonas": 2,
+      "ubicacion": "Albania, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
-        "jacuzzi": false,
+        "jacuzzi": true,
         "spa": false,
         "comida": true
       },
@@ -29,11 +30,12 @@
     },
     {
       "id": 2,
-      "NumCamas": 3,
-      "estado": "Disponible",
-      "precioNoche": 700000,
-      "NumPersonas": 4,
-      "ubicacion": "itali",
+      "NumCamas": 1,
+      "name": "Calides",
+      "Disponible": "Disponible",
+      "precioNoche": 100000,
+      "NumPersonas": 2,
+      "ubicacion": "Albania, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -42,9 +44,9 @@
         "comida": true
       },
       "imagenes": {
-        "habitacion": "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
-        "vista": "https://cdn.pixabay.com/photo/2022/08/20/09/16/tenerife-7398660_1280.jpg",
-        "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
+        "habitacion": "https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2025/01/hotel-en-mexico-que-parece-castillo1.jpg?resize=600%2C451&ssl=1",
+        "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591648966.jpg?k=1a90237b228e476b9d3169d2b2890c7056e3c4a8d2151bbc17c9bedf02eb22a6&o=&hp=1",
+        "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591649752.jpg?k=dd338c1c5f2e8f56f52d0c5605adc0dece4181326ebf8dcd97d4b1fc2dc3fe4e&o=&hp=1"
       },
       "reservas": [
         {
@@ -56,11 +58,40 @@
     },
     {
       "id": 3,
+      "NumCamas": 1,
+      "name": "Bella Vista",
+      "Disponible": "Disponible",
+      "precioNoche": 350000,
+      "NumPersonas": 2,
+      "ubicacion": "Albania, Santander",
+      "servicios": {
+        "internet": true,
+        "minibar": false,
+        "jacuzzi": false,
+        "spa": true,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507758183.jpg?k=35bc4bd62f2e2686ce9e9d814c12a2960731a5c03d31b24adb2494ad0605fe86&o=&hp=1",
+        "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/593426997.jpg?k=147dfcb7c56a9b2b0e471f4d24ade339425771f6b97cdf885e146ca996f0c888&o=&hp=1",
+        "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/258982289.jpg?k=f68df5504bc301acc8ccfa9cb0f8887550becc5d58a0c52e6da63e2c791c07c9&o=&hp=1"
+      },
+      "reservas": [
+        {
+          "inicio": "",
+          "fin": "",
+          "clienteId": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
       "NumCamas": 2,
-      "estado": "Disponible",
+      "name": "Gardens",
+      "Disponible": "Disponible",
       "precioNoche": 100000,
       "NumPersonas": 4,
-      "ubicacion": "itali",
+      "ubicacion": "Albania, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -69,9 +100,65 @@
         "comida": true
       },
       "imagenes": {
-        "habitacion": "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
-        "vista": "https://cdn.pixabay.com/photo/2022/08/20/09/16/tenerife-7398660_1280.jpg",
-        "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
+        "habitacion": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591649779.jpg?k=c48f4bf7029f0f12a32505721933f1a0696d0f03c44523e7fd456f1d5e0b9bf4&o=&hp=1",
+        "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591648893.jpg?k=45b917c59c014c4d3619f7dae7af8dd2f8fb81c19a56cd4e58bedd52b78260fb&o=&hp=1",
+        "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527207384.jpg?k=9648e08ffd5b3a865bce160b8e4eee7fd8d6e2275881a4e3e6fbd7ef30641e12&o=&hp=1"
+      },
+      "reservas": [
+        {
+          "inicio": "",
+          "fin": "",
+          "clienteId": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "NumCamas": 2,
+      "name": "Atico",
+      "Disponible": "Disponible",
+      "precioNoche": 100000,
+      "NumPersonas": 4,
+      "ubicacion": "Albania, Santander",
+      "servicios": {
+        "internet": true,
+        "minibar": false,
+        "jacuzzi": false,
+        "spa": false,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/593427962.jpg?k=8d46416ed6f06bb16c4df0c6f86eab28647974cdb48ab97da8f707b50e98d584&o=&hp=1",
+        "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468165505.jpg?k=b77577cdcaf2e55b5b247484517643eaac5a75a24859980ea0c69ef918c1991f&o=&hp=1",
+        "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527202997.jpg?k=0f0cfcd5af448a24dc56e5b76f59bbdc176565a13aa6d0f3ffaf70c6c425a154&o=&hp=1"
+      },
+      "reservas": [
+        {
+          "inicio": "",
+          "fin": "",
+          "clienteId": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "NumCamas": 1,
+      "name": "jardines",
+      "Disponible": "Disponible",
+      "precioNoche": 100000,
+      "NumPersonas": 2,
+      "ubicacion": "Albania, Santander",
+      "servicios": {
+        "internet": true,
+        "minibar": false,
+        "jacuzzi": false,
+        "spa": false,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468074988.jpg?k=b388eb34e9b718abae545c8bc6f2c68dbf137c765a486dac8b29e23a4940767a&o=&hp=1",
+        "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468144427.jpg?k=b017da3deb9825565e90d23422321f7af802ab5799296f5aa082d0ef84f7f695&o=&hp=1",
+        "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468068326.jpg?k=73cd647e5752440c3a67c08e69cc4c8dcd6f1c6d991b7b8d54045eb5b618e406&o=&hp=1"
       },
       "reservas": [
         {
@@ -90,62 +177,6 @@
       "nombre": "Jennifer",
       "apellido": "Arcs",
       "email": "jenni@gmail.com"
-    },
-    {
-      "user": "emmanuelsan01",
-      "password": "mondongo",
-      "nombre": "Emmanuel",
-      "apellido": "Sánchez",
-      "email": "sonic@gmail.com",
-      "id": 2
-    },
-    {
-      "user": "wwwww",
-      "password": "wwww",
-      "nombre": "daniel",
-      "apellido": "wwww",
-      "email": "wwww",
-      "id": 3
-    },
-    {
-      "user": "ssss",
-      "password": "ssss",
-      "nombre": "sss",
-      "apellido": "ssss",
-      "email": "ssss",
-      "id": 4
-    },
-    {
-      "user": "2222",
-      "password": "2222",
-      "nombre": "222",
-      "apellido": "2222",
-      "email": "2222",
-      "id": 5
-    },
-    {
-      "user": "Chizak",
-      "password": "Ytzhak*·2007!",
-      "nombre": "Ytzhak Dawidh",
-      "apellido": "Carvajal Contreras",
-      "email": "ytzhakgdc@gmail.com",
-      "id": 6
-    },
-    {
-      "user": "emmanuelsan01",
-      "password": "mondongo",
-      "nombre": "Emmanuel",
-      "apellido": "Sánchez",
-      "email": "hedgehog@gmail.com",
-      "id": 7
-    },
-    {
-      "user": "hgrhr",
-      "password": "fgfhfh",
-      "nombre": "bg",
-      "apellido": "hghgj",
-      "email": "ghhg",
-      "id": 8
     }
   ],
   "profile": {

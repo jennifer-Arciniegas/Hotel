@@ -42,7 +42,7 @@ menuToggle.addEventListener('click', () => {
 //-------------------------------------- agregar al catalogo las habitaciones
 let habitaciones = document.getElementById("catalogo");
 habitaciones.style.display = "grid";
-habitaciones.style.gridTemplateColumns = "repeat(3, 1fr)";
+habitaciones.style.gridTemplateColumns = "repeat(4, 1fr)";
 habitaciones.style.gap = "10px";
 
 fetch("http://localhost:3000/rooms")
@@ -57,11 +57,11 @@ fetch("http://localhost:3000/rooms")
         // info a la habitación
         habitacion.innerHTML = `
             <img src="${element.imagenes.habitacion}" alt="Imagen de la habitación" style="width: 100%; height: auto;">
-            
+            <h2>${element.name}</h2>
             <p>Número de camas: ${element.NumCamas}</p>
             <p>Ubicación: ${element.ubicacion}</p>
             <p>Precio por noche: $${element.precioNoche}</p>
-            <p>Estado: ${element.estado}</p>
+            <p>Estado: ${element.Disponible}</p>
         `;
 
         // Añadir la habitación al catálogo
