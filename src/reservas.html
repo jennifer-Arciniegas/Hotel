@@ -15,8 +15,6 @@
             <!-- Menú en pantallas grandes -->
             <div class="hidden md:flex space-x-8 items-center">
                 <ul class="flex space-x-8">
-                    <li><button id="abriModal" class="hover:text-indigo-500 hidden">Log In</button></li>
-                    <li><a href="./src/register.html" class="hover:text-indigo-500">Registro</a></li>
                     <li><a href="#" class="hover:text-indigo-500"  id="reservas">Reservas</a></li>
                     <li><a href="#" class="hover:text-indigo-500">Contactos</a></li>
                     <li><a href="../index.html" class="hover:text-indigo-500">Log out</a></li>
@@ -43,4 +41,14 @@
         </div>
     </nav>
 </body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+    // Cambiar la visibilidad del menú
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+});
+
+</script>
 </html>

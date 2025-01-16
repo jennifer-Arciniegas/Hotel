@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>contactos</title>
+</head>
+<body>
+    <nav class="bg-sky-100 border-gray-200 p-4">
+        <div class="max-w-screen-xl flex items-center justify-between mx-auto">
+            <!-- Logo a la izquierda -->
+            <span>Hotel el rincon de carmen</span>
+    
+            <!-- Menú en pantallas grandes -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <ul class="flex space-x-8">
+                    <li><a href="../index.html" class="hover:text-indigo-500">Home</a></li>
+                    <li><button id="abriModal" class="hover:text-indigo-500">Log In</button></li>
+                    <li><a href="./register.html" class="hover:text-indigo-500">Registro</a></li>
+                    <li><a href="./reservas.html" class="hover:text-indigo-500 hidden"  id="reservas">Reservas</a></li>
+
+                </ul>
+            </div>
+    
+            <!-- Botón para menú en pantallas pequeñas -->
+            <button id="menu-toggle" class="md:hidden p-2 text-gray-500 hover:text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Menú desplegable para pantallas pequeñas -->
+        <div class="md:hidden" id="menu" style="display: none;">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="../index.html" class="hover:text-indigo-500">home</a></li>
+                <li><button id="abriModal" class="hover:text-indigo-500">Log In</button></li>
+                <li><a href="./src/register.html" class="hover:text-indigo-500">Registro</a></li>
+                <li><a href="reservas.html" class="hover:text-indigo-500" id="reservas">Reservas</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div>
+            <div>
+                <h1>Contacto.</h1>
+                <ul>
+                    <li>Numero: +57 1234567890</li>
+                    <li>email: horccontacto@gmail.com</li>
+                    <li>Disponible 24/7</li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </section>
+
+
+            <!--modal-->
+            <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+                <div class="flex justify-center items-center w-full h-full">
+                    <div class="bg-white p-6 rounded-lg h-80 w-96">
+                        <div class="flex justify-center">
+                            <h2 class="font-semibold">Inicio de sesion</h2>
+                        </div>
+                        
+                        <form action="" id="login" class="p-10">
+                            
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuario" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
+                            <br><br>
+                            
+                            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
+                            <br><br>
+                            <div class="flex justify-center">
+                                <button type="submit" id="close-modal" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Iniciar sesión</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+</body>
+<script src="contactos.js"></script>
+</html>
