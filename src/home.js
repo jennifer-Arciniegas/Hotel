@@ -45,6 +45,7 @@ habitaciones.style.display = "grid";
 habitaciones.style.gridTemplateColumns = "repeat(4, 1fr)";
 habitaciones.style.gap = "10px";
 
+
 fetch("http://localhost:3000/rooms")
 .then(response => response.json())
 .then(data => {
@@ -52,7 +53,7 @@ fetch("http://localhost:3000/rooms")
     data.forEach(element => {
         // Crear un div para la habitación
         const habitacion = document.createElement("div");
-        habitacion.classList.add("habitacion", "border", "p-4", "m-6", "bg-rose-200", "w-80", "h-96", "rounded-lg");
+        habitacion.classList.add("habitacion", "border", "p-4", "m-6", "bg-rose-200", "w-80", "h-96", "rounded-lg", );
 
         // info a la habitación
         habitacion.innerHTML = `

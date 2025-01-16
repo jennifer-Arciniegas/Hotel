@@ -145,7 +145,7 @@
       "NumCamas": 1,
       "name": "jardines",
       "Disponible": "Disponible",
-      "precioNoche": 100000,
+      "precioNoche": 200000,
       "NumPersonas": 2,
       "ubicacion": "Albania, Santander",
       "servicios": {
@@ -177,6 +177,14 @@
       "nombre": "Jennifer",
       "apellido": "Arcs",
       "email": "jenni@gmail.com"
+    },
+    {
+      "user": "anderson",
+      "password": "asdfgh",
+      "nombre": "abnder",
+      "apellido": "galv",
+      "email": "12wahaha@gmail.com",
+      "id": 2
     }
   ],
   "profile": {
