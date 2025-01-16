@@ -42,21 +42,22 @@ menuToggle.addEventListener('click', () => {
 //-------------------------------------- agregar al catalogo las habitaciones
 let habitaciones = document.getElementById("catalogo");
 habitaciones.style.display = "grid";
-habitaciones.style.gridTemplateColumns = "repeat(2, 1fr)";
+habitaciones.style.gridTemplateColumns = "repeat(3, 1fr)";
 habitaciones.style.gap = "10px";
 
 fetch("http://localhost:3000/rooms")
 .then(response => response.json())
 .then(data => {
-    data.rooms.forEach(element => {
+    console.log(data);
+    data.forEach(element => {
         // Crear un div para la habitación
         const habitacion = document.createElement("div");
-        habitacion.classList.add("habitacion", "border", "p-4", "m-4", "bg-rose-200", "w-80", "h-80");
+        habitacion.classList.add("habitacion", "border", "p-4", "m-6", "bg-rose-200", "w-80", "h-96", "rounded-lg");
 
-        // Añadir contenido a la habitación
+        // info a la habitación
         habitacion.innerHTML = `
             <img src="${element.imagenes.habitacion}" alt="Imagen de la habitación" style="width: 100%; height: auto;">
-            <h2>${element.name}</h2>
+            
             <p>Número de camas: ${element.NumCamas}</p>
             <p>Ubicación: ${element.ubicacion}</p>
             <p>Precio por noche: $${element.precioNoche}</p>

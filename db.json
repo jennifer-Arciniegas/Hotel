@@ -2,7 +2,7 @@
   "rooms": [
     {
       "id": 1,
-      "NumCamas": 3,
+      "NumCamas": 1,
       "estado": "Disponible",
       "precioNoche": 150000,
       "NumPersonas": 4,
@@ -42,7 +42,34 @@
         "comida": true
       },
       "imagenes": {
-        "habitacion": "https://cdn.pixabay.com/photo/2016/09/18/03/28/travel-1677347_1280.jpge",
+        "habitacion": "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
+        "vista": "https://cdn.pixabay.com/photo/2022/08/20/09/16/tenerife-7398660_1280.jpg",
+        "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
+      },
+      "reservas": [
+        {
+          "inicio": "",
+          "fin": "",
+          "clienteId": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "NumCamas": 2,
+      "estado": "Disponible",
+      "precioNoche": 100000,
+      "NumPersonas": 4,
+      "ubicacion": "itali",
+      "servicios": {
+        "internet": true,
+        "minibar": false,
+        "jacuzzi": false,
+        "spa": false,
+        "comida": true
+      },
+      "imagenes": {
+        "habitacion": "https://img.freepik.com/foto-gratis/suite-dormitorio-lujo-renderizado-3d-hotel-resort-dos-camas-individuales-sala-estar_105762-2018.jpg",
         "vista": "https://cdn.pixabay.com/photo/2022/08/20/09/16/tenerife-7398660_1280.jpg",
         "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
       },
@@ -111,6 +138,14 @@
       "apellido": "Sánchez",
       "email": "hedgehog@gmail.com",
       "id": 7
+    },
+    {
+      "user": "hgrhr",
+      "password": "fgfhfh",
+      "nombre": "bg",
+      "apellido": "hghgj",
+      "email": "ghhg",
+      "id": 8
     }
   ],
   "profile": {
