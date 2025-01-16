@@ -1,44 +1,48 @@
-// llamar elementos
-const img1 = document.getElementById("img1");
-const img2 = document.getElementById("img2");
+// Llamar elementos
+const images = document.querySelectorAll('.carousel-images .duration-5000'); 
 const antImg = document.getElementById("AnteriorvBtn");
 const sigImg = document.getElementById("SiguientetBtn");
-//  iniciar con la primera img
-let actualImg = 1;
-//funcion para mostrar imagenes 
-function mostrarImg(){
-    if(actualImg === 1){
-        img1.classList.remove("hidden");
-        img2.classList.add("hidden");
-    }else{
-        img1.classList.add("hidden");
-        img2.classList.remove("hidden");
-    }
+
+let actualImg = 0;  // Inicializar en la primera imagen
+
+// Función para mostrar la imagen actual y ocultar las demás
+function mostrarImg() {
+    // Primero, ocultar todas las imágenes
+    images.forEach(img => img.classList.add("hidden"));
+    // Luego, mostrar la imagen actual
+    images[actualImg].classList.remove("hidden");
 }
 
-//funciones para ir al siguente img
- function siguenteimg(){
-    actualImg = (actualImg === 1) ? 2: 1;
+// Función para ir a la siguiente imagen
+function siguienteImg() {
+    actualImg = (actualImg + 1) % images.length; 
     mostrarImg();
 }
-//funcion para ir a la anterior img
-function anteriorimg(){
-    actualImg = (actualImg === 1) ? 2: 1;
-    mostrarImg()
-}
-//eventos que escuchan los botones
-sigImg.addEventListener("click", siguenteimg);
-antImg.addEventListener("click", anteriorimg)
 
+// Función para ir a la imagen anterior
+function anteriorImg() {
+    actualImg = (actualImg - 1 + images.length) % images.length; 
+    mostrarImg();
+}
+
+sigImg.addEventListener("click", siguienteImg);
+antImg.addEventListener("click", anteriorImg);
+
+// Mostrar la imagen inicial
 mostrarImg();
+
+// Autoplay: Cambiar la imagen cada 3 
+setInterval(siguienteImg, 3000);
 
 //-----------------menu 
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
 menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    // Cambiar la visibilidad del menú
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
 });
+
 //-------------------------------------- agregar al catalogo las habitaciones
 fetch("http://localhost:3000/rooms")
 .then(response => response.json())
@@ -47,7 +51,7 @@ fetch("http://localhost:3000/rooms")
     data.forEach(element => {
         // Crear un div para la habitación
         const habitacion = document.createElement("div");
-        habitacion.classList.add("habitacion", "border", "p-4", "bg-rose-200", "rounded-lg", "w-full");
+        habitacion.classList.add("habitacion", "border", "p-4", "bg-rose-200", "rounded-lg", "w-full", "hover:scale-110", "transition-all", "duration-300");
 
         // info a la habitación
         habitacion.innerHTML = `
@@ -70,7 +74,7 @@ const openLogIn = document.getElementById("abriModal");
 const closeLogIbn = document.getElementById("close-modal");
 const modal = document.getElementById("login-modal");
 const reserva = document.getElementById("reservas")
-const loginisio = document.getElementById("inicioSesion")
+const loginisio = document.getElementById("abriModal")
 //abiri modal 
 openLogIn.addEventListener("click", () =>{
     modal.classList.remove("hidden")
