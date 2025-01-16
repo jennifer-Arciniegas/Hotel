@@ -25,10 +25,10 @@
                 <div class="hidden md:flex w-full " id="menu">
                     <ul class="flex space-x-8 p-4 md:p-0">
                         <li>
-                            <button id="abriModal" class="hover:text-indigo-500">log in</button>
+                            <button id="abriModal" id="inicioSesion" class="hover:text-indigo-500 ">log in</button>
                         </li>
                         <li> <a href="./src/register.html" class="hover:text-indigo-500">Registro</a></li>
-                        <li><a href="">Reservas</a></li>
+                        <li><a href="" class="hidden" id="reservas" class="hover:text-indigo-500">Reservas</a></li>
                         <li><a href="">Contactos</a></li>
                     </ul>
                 </div>
@@ -72,15 +72,19 @@
         <!--modal-->
         <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
             <div class="flex justify-center items-center w-full h-full">
-                <div class="bg-white p-6 rounded-lg w-96">
-                    <h2 class="font-semibold">Inicio de sesion</h2>
-                    <form action="" id="login">
-                        <label for="usuario">Usuario: </label>
-                        <input type="text" name="usuario" id="usuario">
+                <div class="bg-white p-6 rounded-lg h-80 w-96">
+                    <div class="flex justify-center">
+                        <h2 class="font-semibold">Inicio de sesion</h2>
+                    </div>
+                    
+                    <form action="" id="login" class="p-10">
+                        
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuario" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
                         <br><br>
-                        <label for="contraseña">Contraseña: </label>
-                        <input type="text" name="contraseña" id="contraseña">
-                        <div class="flex justify-end">
+                        
+                        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
+                        <br><br>
+                        <div class="flex justify-center">
                             <button type="submit" id="close-modal" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Iniciar sesión</button>
                         </div>
                     </form>
