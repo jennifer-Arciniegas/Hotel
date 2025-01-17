@@ -31,10 +31,10 @@
     {
       "id": 2,
       "NumCamas": 1,
-      "name": "Calides",
+      "name": "Calidez",
       "Disponible": "Disponible",
       "precioNoche": 100000,
-      "NumPersonas": 2,
+      "NumPersonas": 1,
       "ubicacion": "Albania, Santander",
       "servicios": {
         "internet": true,
@@ -90,7 +90,7 @@
       "name": "Gardens",
       "Disponible": "Disponible",
       "precioNoche": 100000,
-      "NumPersonas": 4,
+      "NumPersonas": 2,
       "ubicacion": "Albania, Santander",
       "servicios": {
         "internet": true,
@@ -118,7 +118,7 @@
       "name": "Atico",
       "Disponible": "Disponible",
       "precioNoche": 100000,
-      "NumPersonas": 4,
+      "NumPersonas": 2,
       "ubicacion": "Albania, Santander",
       "servicios": {
         "internet": true,
@@ -233,54 +233,6 @@
       "nombre": "Jennifer",
       "apellido": "Arcs",
       "email": "jenni@gmail.com"
-    },
-    {
-      "user": "anderson",
-      "password": "asdfgh",
-      "nombre": "abnder",
-      "apellido": "galv",
-      "email": "12wahaha@gmail.com",
-      "id": 2
-    },
-    {
-      "user": "aaaaaa",
-      "password": "aaaaa",
-      "nombre": "andres",
-      "apellido": "aaaaa",
-      "email": "aaaaa",
-      "id": 3
-    },
-    {
-      "user": "eee",
-      "password": "eee",
-      "nombre": "eee",
-      "apellido": "eeee",
-      "email": "eee",
-      "id": 4
-    },
-    {
-      "user": "antonioprocrack777",
-      "password": "123vis",
-      "nombre": "jose",
-      "apellido": "antonio",
-      "email": "antonio44@hotmail.com",
-      "id": 5
-    },
-    {
-      "user": "",
-      "password": "",
-      "nombre": "carlos",
-      "apellido": "calitos",
-      "email": "carlos",
-      "id": 6
-    },
-    {
-      "user": "dario",
-      "password": "123",
-      "nombre": "Dario",
-      "apellido": "Villamizar",
-      "email": "ivan.1518@hotmail.com",
-      "id": 7
     }
   ],
   "profile": {

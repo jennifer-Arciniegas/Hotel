@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>  
+<body>
     <nav class="bg-sky-100 border-gray-200 p-4">
         <div class="max-w-screen-xl flex items-center justify-between mx-auto">
             <!-- Logo a la izquierda -->
@@ -15,9 +15,9 @@
             <!-- Menú en pantallas grandes -->
             <div class="hidden md:flex space-x-8 items-center">
                 <ul class="flex space-x-8">
-                    <li><a href="#" class="hover:text-indigo-500"  id="reservas">Reservas</a></li>
-                    <li><a href="#" class="hover:text-indigo-500">Contactos</a></li>
-                    <li><a href="../index.html" class="hover:text-indigo-500">Log out</a></li>
+                    <li><a href="/index.html" class="hover:text-indigo-500"  id="reservas">Home</a></li>
+                    <li><a href="../page/contactos.html" class="hover:text-indigo-500">Contactos</a></li>
+                    <li><a href="/index.html" class="hover:text-indigo-500">Log out</a></li>
                     
                 </ul>
             </div>
@@ -33,37 +33,26 @@
         <!-- Menú desplegable para pantallas pequeñas -->
         <div class="md:hidden" id="menu" style="display: none;">
             <ul class="flex flex-col space-y-4 p-4">
-                <li><button id="abriModal" class="hover:text-indigo-500">Log In</button></li>
-                <li><a href="./src/register.html" class="hover:text-indigo-500">Registro</a></li>
-                <li><a href="#" class="hover:text-indigo-500" id="reservas">Reservas</a></li>
-                <li><a href="#" class="hover:text-indigo-500">Contactos</a></li>
+                <li><a href="/index.html" class="hover:text-indigo-500"  id="reservas">Home</a></li>
+                <li><a href="../page/contactos.html" class="hover:text-indigo-500">Contactos</a></li>
+                <li><a href="/index.html" class="hover:text-indigo-500">Log out</a></li>
             </ul>
         </div>
     </nav>
     <section>
-        <div>
-            <button class="bg-green-300 rounded-lg m-4 hover:bg-green-400">Ver mis reservas </button>
+        <div class="flex flex-col-2  gap-4 m-4">
+            <div class=""> 
+                <div> info</div>
+                <div>boton reservar</div>
+            </div>
+            <div class="carruselRoom"> carrusel de fotos</div>
         </div>
-        <div id="espacioReservas m-4">
-
-        </div>
+              <!-- Botón de WhatsApp -->
+              <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-5 left-5 p-3 bg-green-500 rounded-full shadow-lg hover:scale-110 transition-all duration-300" title="Chatea con nosotros en WhatsApp">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-16 h-16">
+              </a>
     </section>
-    <section class="p-4">
-        
-            <h3>Ingrese los datos para su busqueda.</h3>
-            <label for="BedFilter">cantidad de camas:</label>
-            <br>
-            <input type="number" name="BedFilter" id="BedFilter" placeholder="ingrese el valor" class="bg-gray-100">
-            
-
-        
-
-
-        <div id="catalogo" class="grid grid-cols-1 gap-10 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 p-6">
-  
-        </div>
-    </section>
-
+    
 </body>
-<script src="reserva.js"></script>
+<script src="../script/habitacion.js"></script>
 </html>

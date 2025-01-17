@@ -9,10 +9,10 @@ menuToggle.addEventListener('click', () => {
 
 
 //-------------------------------------- agregar al catalogo las habitaciones
-const NCamaFiltro = document.getElementById("BedFilter")
-NCamaFiltro.addEventListener('change', () => {
-        const numCamas = NCamaFiltro.value;
-        fetch(`http://localhost:3000/rooms?NumCamas=${numCamas}`)
+const CperFiltro = document.getElementById("BedFilter")
+CperFiltro.addEventListener('change', () => {
+        const numperso = CperFiltro.value;
+        fetch(`http://localhost:3000/rooms?NumPersonas=${numperso}`)
     .then(response => response.json())
     .then(data => {
         console.log(data);

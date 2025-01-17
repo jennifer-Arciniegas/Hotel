@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>  
+    <nav class="bg-sky-100 border-gray-200 p-4">
+        <div class="max-w-screen-xl flex items-center justify-between mx-auto">
+            <!-- Logo a la izquierda -->
+            <span>Logo</span>
+    
+            <!-- Menú en pantallas grandes -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <ul class="flex space-x-8">
+                    <li><a href="/index.html" class="hover:text-indigo-500"  id="reservas">Home</a></li>
+                    <li><a href="../page/contactos.html" class="hover:text-indigo-500">Contactos</a></li>
+                    <li><a href="/index.html" class="hover:text-indigo-500">Log out</a></li>
+                    
+                </ul>
+            </div>
+    
+            <!-- Botón para menú en pantallas pequeñas -->
+            <button id="menu-toggle" class="md:hidden p-2 text-gray-500 hover:text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Menú desplegable para pantallas pequeñas -->
+        <div class="md:hidden" id="menu" style="display: none;">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="/index.html" class="hover:text-indigo-500"  id="reservas">Home</a></li>
+                <li><a href="../page/contactos.html" class="hover:text-indigo-500">Contactos</a></li>
+                <li><a href="/index.html" class="hover:text-indigo-500">Log out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+            <button class="bg-green-300 rounded-lg m-4 hover:bg-green-400">Ver mis reservas </button>
+        </div>
+        <div id="espacioReservas m-4">
+
+        </div>
+    </section>
+    <section class="p-4">
+        
+            <h3>Ingrese los datos para su busqueda.</h3>
+            <label for="BedFilter">cantidad de personas:</label>
+            <br>
+            <input type="number" name="BedFilter" id="BedFilter" placeholder="ingrese el valor" class="bg-gray-100">
+            
+
+        
+
+
+        <div id="catalogo" class="grid grid-cols-1 gap-10 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 p-6">
+  
+        </div>
+    </section>
+
+</body>
+<script src="../script/reserva.js"></script>
+</html>
