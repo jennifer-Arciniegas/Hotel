@@ -56,7 +56,7 @@ fetch("http://localhost:3000/rooms")
         // info a la habitación
         habitacion.innerHTML = `
             
-            <div class=" flex justify-center ml-10 w-80 h-60  "> <img class="rounded-lg" src="${element.imagenes.habitacion}" alt="Imagen de la habitación" class="w-full h-auto"> </div>
+            <div class=" flex justify-center m-1 md:w-70 md:h-70  "> <img class="rounded-lg" src="${element.imagenes.habitacion}" alt="Imagen de la habitación" class="w-full h-auto"> </div>
             <h2 class="text-xl font-semibold">${element.name}</h2>
             <p>Número de camas: ${element.NumCamas}</p>
             <p>Ubicación: ${element.ubicacion}</p>
