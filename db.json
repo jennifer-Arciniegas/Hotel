@@ -265,6 +265,22 @@
       "apellido": "antonio",
       "email": "antonio44@hotmail.com",
       "id": 5
+    },
+    {
+      "user": "",
+      "password": "",
+      "nombre": "carlos",
+      "apellido": "calitos",
+      "email": "carlos",
+      "id": 6
+    },
+    {
+      "user": "dario",
+      "password": "123",
+      "nombre": "Dario",
+      "apellido": "Villamizar",
+      "email": "ivan.1518@hotmail.com",
+      "id": 7
     }
   ],
   "profile": {
