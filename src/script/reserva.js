@@ -47,4 +47,35 @@ CperFiltro.addEventListener('change', () => {
 
 })
 
+//--------------------------------ver reservas
+const verReservas = document.getElementById("verReservasRealizadas");
+const espacioR = document.getElementById("espacioReservas");
+verReservas.addEventListener("click", () =>{
+
+   const tablaR = document.createElement("table")
+   tablaR.classList.add("table-auto", "n-4")
+   tablaR.innerHTML = `
+            <thead class="bg-green-300 ">
+                <th>Habitacion</th>
+                <th>Fecha de inicio</th>
+                <th>Fecha salida</th>
+                <th>Valor por noche</th>
+                <th>Valor total</th>
+                <th></th>
+            </thead>
+             <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td> <button class="bg-rose-300 rounded-lg hover:bg-rose-500 p-1 m-1">Cancelar</button></td>
+                </tr>
+            </tbody>
+   `;
+   espacioR.appendChild(tablaR)
+
+})
+
 

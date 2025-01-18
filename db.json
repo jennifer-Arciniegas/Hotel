@@ -237,7 +237,8 @@
       "password": "123",
       "nombre": "Jennifer",
       "apellido": "Arcs",
-      "email": "jenni@gmail.com"
+      "email": "jenni@gmail.com",
+      "token": "321"
     }
   ],
   "profile": {
