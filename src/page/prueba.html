@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" id="formu-reservation">
+        <label for="fechaInicio">fechas de ingreso</label>
+        <input type="date" name="fechaInicio" id="fechaInicio">
+        <br>
+        <label for="fechaFin">fecha salida</label>
+        <input type="date" name="fechaFin" id="fechaFin">
+        <br>
+        <input type="radio" id="openModal">Accepta los terminos
+        <br>
+        <button type="submit">reservar</button>
+    </form>
+
+    <div id="terms-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <p>Aviso importante sobre la reserva: </p>
+        <p>La hora de check-in para las habitaciones será a las 14:00 del día. Si no se hace efectiva 
+            la reserva antes de las 16:00, la habitación quedará disponible para que otra persona la reserve.</p>
+    </div>
+</body>
+<script>
+const openModal = document.getElementById("openModal")
+</script>
+</html>
