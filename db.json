@@ -20,9 +20,7 @@
         "vista": "https://www.momondo.com.co/rimg/himg/88/fb/79/expediav2-123248-3591475457-659215.jpg?width=968&height=607&crop=true",
         "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
       },
-      "reservas": [
-
-      ]
+      "reservas": []
     },
     {
       "id": 2,
@@ -45,7 +43,11 @@
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591649752.jpg?k=dd338c1c5f2e8f56f52d0c5605adc0dece4181326ebf8dcd97d4b1fc2dc3fe4e&o=&hp=1"
       },
       "reservas": [
-
+        {
+          "inicio": "2025-01-19",
+          "fin": "2025-01-20",
+          "clienteId": 1
+        }
       ]
     },
     {
@@ -97,7 +99,6 @@
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527207384.jpg?k=9648e08ffd5b3a865bce160b8e4eee7fd8d6e2275881a4e3e6fbd7ef30641e12&o=&hp=1"
       },
       "reservas": [
-
         {
           "inicio": "2025-01-18",
           "fin": "2025-01-23",
@@ -125,9 +126,7 @@
         "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468165505.jpg?k=b77577cdcaf2e55b5b247484517643eaac5a75a24859980ea0c69ef918c1991f&o=&hp=1",
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527202997.jpg?k=0f0cfcd5af448a24dc56e5b76f59bbdc176565a13aa6d0f3ffaf70c6c425a154&o=&hp=1"
       },
-      "reservas": [
-
-      ]
+      "reservas": []
     },
     {
       "id": 6,
@@ -149,9 +148,7 @@
         "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468144427.jpg?k=b017da3deb9825565e90d23422321f7af802ab5799296f5aa082d0ef84f7f695&o=&hp=1",
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468068326.jpg?k=73cd647e5752440c3a67c08e69cc4c8dcd6f1c6d991b7b8d54045eb5b618e406&o=&hp=1"
       },
-      "reservas": [
-
-      ]
+      "reservas": []
     },
     {
       "id": 7,
@@ -173,9 +170,7 @@
         "vista": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/d2/d5/fb/photo0jpg.jpg?w=1200&h=-1&s=1",
         "baño": " "
       },
-      "reservas": [
-
-      ]
+      "reservas": []
     },
     {
       "id": 8,
@@ -197,9 +192,7 @@
         "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/362483024.jpg?k=d49232c5f01ddd12e3dffef09841fce1143b7025dcb56499eae7db02761bb4fb&o=&hp=1",
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/362483028.jpg?k=f0cb75b1cc69df786c7d6996346669b9455f5c01bef9dfee38940520305440f4&o=&hp=1"
       },
-      "reservas": [
-
-      ]
+      "reservas": []
     }
   ],
   "clients": [
