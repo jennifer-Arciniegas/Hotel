@@ -37,7 +37,7 @@ document.getElementById("login").addEventListener("submit", async function (even
     // verificacion con los clientes registrados 
     try{
         // verificar 
-        const response = await fetch(`http://localhost:3000/clients?user=${usuario}&password=${contraseña}`)
+        const response = await fetch(`https://hotelrcarmen.onrender.com/clients?user=${usuario}&password=${contraseña}`)
         const users = await response.json();
         if(users.length >0){
             //alert("inicio de sesion exitoso")

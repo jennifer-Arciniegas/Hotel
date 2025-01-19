@@ -9,7 +9,7 @@ function registerUser(){
             apellido: document.getElementById("lastName").value,
             email: document.getElementById("email").value
         };
-        fetch("http://localhost:3000/clients/", {
+        fetch("https://hotelrcarmen.onrender.com/clients/", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json",
