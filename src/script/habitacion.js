@@ -123,3 +123,13 @@ function actualizarReserva(roomID, nuevasReservas) {
             console.error("Error en la operación:", error);
         });
 }
+
+
+//-----------------menu 
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+    // Cambiar la visibilidad del menú
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+});
