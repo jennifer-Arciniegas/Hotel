@@ -21,11 +21,7 @@
         "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
       },
       "reservas": [
-        {
-          "inicio": "",
-          "fin": "",
-          "clienteId": 1
-        }
+
       ]
     },
     {
@@ -49,11 +45,7 @@
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591649752.jpg?k=dd338c1c5f2e8f56f52d0c5605adc0dece4181326ebf8dcd97d4b1fc2dc3fe4e&o=&hp=1"
       },
       "reservas": [
-        {
-          "inicio": "",
-          "fin": "",
-          "clienteId": 1
-        }
+
       ]
     },
     {
@@ -105,11 +97,7 @@
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527207384.jpg?k=9648e08ffd5b3a865bce160b8e4eee7fd8d6e2275881a4e3e6fbd7ef30641e12&o=&hp=1"
       },
       "reservas": [
-        {
-          "inicio": "",
-          "fin": "",
-          "clienteId": 1
-        },
+
         {
           "inicio": "2025-01-18",
           "fin": "2025-01-23",
@@ -138,11 +126,7 @@
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527202997.jpg?k=0f0cfcd5af448a24dc56e5b76f59bbdc176565a13aa6d0f3ffaf70c6c425a154&o=&hp=1"
       },
       "reservas": [
-        {
-          "inicio": "",
-          "fin": "",
-          "clienteId": 1
-        }
+
       ]
     },
     {
@@ -166,11 +150,7 @@
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/468068326.jpg?k=73cd647e5752440c3a67c08e69cc4c8dcd6f1c6d991b7b8d54045eb5b618e406&o=&hp=1"
       },
       "reservas": [
-        {
-          "inicio": "",
-          "fin": "",
-          "clienteId": 1
-        }
+
       ]
     },
     {
@@ -194,11 +174,7 @@
         "baño": " "
       },
       "reservas": [
-        {
-          "inicio": "",
-          "fin": "",
-          "clienteId": 1
-        }
+
       ]
     },
     {
@@ -222,11 +198,7 @@
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/362483028.jpg?k=f0cb75b1cc69df786c7d6996346669b9455f5c01bef9dfee38940520305440f4&o=&hp=1"
       },
       "reservas": [
-        {
-          "inicio": "",
-          "fin": "",
-          "clienteId": 1
-        }
+
       ]
     }
   ],

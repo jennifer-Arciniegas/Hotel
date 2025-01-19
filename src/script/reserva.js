@@ -55,7 +55,7 @@ verReservas.addEventListener("click", () =>{
    const tablaR = document.createElement("table")
    tablaR.classList.add("table-auto", "n-4")
    tablaR.innerHTML = `
-            <thead class="bg-green-300 ">
+            <thead class="bg-green-300 "> 
                 <th>Habitacion</th>
                 <th>Fecha de inicio</th>
                 <th>Fecha salida</th>
@@ -74,6 +74,9 @@ verReservas.addEventListener("click", () =>{
                 </tr>
             </tbody>
    `;
+    fetch(`http://localhost:3000/rooms/reservas`)
+
+   
    espacioR.appendChild(tablaR)
 
 })

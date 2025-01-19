@@ -113,3 +113,49 @@ document.getElementById("login").addEventListener("submit", async function (even
         
     }
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+   
+    const carrusel = document.getElementById("carruselComida");
+    const items = carrusel.getElementsByClassName("carruselComida-item");
+    const AntBTN = document.getElementById("anterioBTN");
+    const SigBTN = document.getElementById("siguienteBTN");
+    let currentIndex = 0;
+    function showItems(index){
+        if(index < 0) index = items.length-1;
+        if(index >= items.length) index = 0;
+
+        items[currentIndex].classList.remove("active");
+        items[index].classList.add("active");
+        currentIndex = index;
+    }
+    AntBTN.addEventListener("click", () => showItems(currentIndex - 1))
+    SigBTN.addEventListener("click",() => showItems(currentIndex + 1))
+    setInterval(() => showItems(currentIndex + 1), 4000);
+
+
+    
+} );
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const carruselSerivicio = document.getElementById("carruselServicios");
+    const itemServicio = carruselSerivicio.getElementsByClassName("carruselServicios-item");
+    const AntBTNServicio = document.getElementById("anterioBTNServicios");
+    const SigBTNServicio = document.getElementById("siguienteBTNServicios");
+    let currentIndexServicio = 0;
+
+    function showItems(index) {
+        if (index < 0) index = itemServicio.length - 1;
+        if (index >= itemServicio.length) index = 0;
+
+        itemServicio[currentIndexServicio].classList.remove("active");
+        itemServicio[index].classList.add("active");
+        currentIndexServicio = index;
+    }
+
+    AntBTNServicio.addEventListener("click", () => showItems(currentIndexServicio - 1));
+    SigBTNServicio.addEventListener("click", () => showItems(currentIndexServicio + 1));
+    setInterval(() => showItems(currentIndexServicio + 1), 4000);
+});

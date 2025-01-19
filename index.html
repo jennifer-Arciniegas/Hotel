@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .carruselComida-item{
+            display: none;
+        }
+        .carruselComida-item.active{
+            display: block;
+        }
+        .carruselServicios-item{
+            display: none;
+        }
+        .carruselServicios-item.active{
+            display: block;
+        }
+     
+
+
+    </style>
     <title>Hotel</title>
 </head>
 <body>
     <main>
-        <nav class="bg-sky-100 border-gray-200 p-4">
+        <nav class="bg-pink-950 border-gray-200 p-4">
             <div class="max-w-screen-xl flex items-center justify-between mx-auto">
                 <!-- Logo a la izquierda -->
-                <span>Hotel el rincon de carmen</span>
+                <span class="text-white text-2xl font-bold mb-2 ">HRC</span>
         
                 <!-- Menú en pantallas grandes -->
                 <div class="hidden md:flex space-x-8 items-center">
-                    <ul class="flex space-x-8">
+                    <ul class="flex space-x-8 text-white text-1xl mb-2">
                         
                         <li><button id="abriModal" class="hover:text-indigo-500">Log In</button></li>
                         <li><a href="./src/page/register.html" class="hover:text-indigo-500">Registro</a></li>
@@ -46,19 +63,20 @@
         
                    
         <section>
-            <div id="carrusel" class="relative w-full" data-carousel="slide">
+            
+            <div id="carrusel" class="relative w-full " data-carousel="slide">
                 <!-- div donde se ve el carrusel -->
-                <div class="relative h-80 overflow-hidden rounded-lg md:h-96">
+                <div class="relative h-80 overflow-hidden  md:h-96">
                     <!-- Imágenes del Carrusel  -->
                     <div class="carousel-images flex">
                         <div class="hidden duration-5000 ease-in-out" id="img1">
-                            <img src="./src/img/habitacion.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/94551592.jpg?k=3014c39aa7a86dde4ac664e4a2120837f130cc17b298426a971a0a84ec69aefe&o=&s=1024x" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
                         </div>
                         <div class="hidden duration-5000 ease-in-out" id="img2">
-                            <img src="./src/img/vista.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover object-top" alt="">
+                            <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/94551052.jpg?k=d355f8691941fa1328343c55b3b786bb57d0cc984f0c0b2fadcbc6f1dc701e92&o=&s=1024x" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover object-top" alt="">
                         </div>
                         <div class="hidden duration-5000 ease-in-out" id="img2">
-                            <img src="./src/img/hotel-casa-de-campo.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover object-top" alt="">
+                            <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/94551048.jpg?k=9ca36513f27bb4cb9fd60364961cd26168679810068c1bffea19c7d2c99dc685&o=&s=1024x" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover object-top" alt="">
                         </div>
                     </div>
             
@@ -70,14 +88,113 @@
             
            
         </section>
-        <div>
-            <h1>conoce elbirn frdvsndo </h1>
-        </div>
+        <section>
+            <div class="p-4">
+                <H2 class="text-3xl font-bold mb-4">El Rincón del Carmen: Tu refugio en la Mesa de los Santos.</H2>
+                    <p class="text-lg mb-4"> Escápate a un lugar donde el tiempo se detiene. Nuestro hotel te ofrece una combinación perfecta de confort y aventura. Relájate en nuestro spa, explora la naturaleza en sus múltiples senderos y deléitate con los sabores auténticos de nuestra región. ¡La Mesa de los Santos te espera
+                </p>
+            </div>
+           
 
+        </section>
+        <section>   
+            <div class="containerComida mx-auto px-4 py-8">
+                <div class="flex flex-col lg:flex-row">
+                    <!--carusel-->
+                    <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                        <div class="relative">
+                            <div id="carruselComida"  class="w-full max-w-xl mx-auto h-80 overflow-hidden">
+                                <div  class="carruselComida-item">
+                                    <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/87bb52f6-15d5-4cd9-9253-04f01555491f/Derivates/d666b5c2-ba8c-4201-afc6-11f2f6990f23.jpg" alt="">
 
+                                </div>
+                                <div  class="carruselComida-item">
+                                    <img src="https://www.saborusa.com/wp-content/uploads/2019/10/58.-Carne-de-res-con-salsa-de-vino-tinto.png" alt="">
+
+                                </div>
+                                <div class="carruselComida-item">
+                                    <img src="https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/portadas_relaciona_4_3/public/node/article/field_image/PHOTO-2024-03-07-04-45-42.jpg?h=1c9b88c9&itok=OnONv_22" alt="">
+
+                                </div>
+                                <div class="carruselComida-item">
+                                    <img src="https://media.istockphoto.com/id/1412192998/es/foto/hormigas-culonas-gastronom%C3%ADa-t%C3%ADpica-de-santander-colombia-foto-sobre-fondo-de-madera.jpg?s=612x612&w=0&k=20&c=FPMF5GV3M3qjrIEQC-f7ZujBik368k9KuOpoM7lFGDc=" alt="">
+
+                                </div>
+                                <div class="carruselComida-item">
+                                    <img src="https://recetasdemicolombia.com/wp-content/uploads/2020/02/cabrito-al-horno.jpg" alt="Cabrito">
+
+                                </div>
+
+                                <div class="carruselComida-item">
+                                    <img src="https://img-global.cpcdn.com/recipes/a75dddc8fa5f86e4/680x482cq70/lomo-de-res-en-salsa-de-vino-tinto-foto-principal.jpg" alt="">
+
+                                </div>
+                                <div class="carruselComida-item">
+                                    <img src="https://media.airedesantafe.com.ar/p/224e7b08726c0b4c509119b8aa74a1e3/adjuntos/268/imagenes/003/833/0003833010/1200x675/smart/carne-al-vino-tinto-la-receta-facil-y-deliciosa-hacer-y-disfrutar-cuando-quieras.png" alt="carne al vino tinto">
+
+                                </div>
+
+                            </div>
+                            <button id="anterioBTN" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-pink-950 bg-opacity-50 hover:bg-opacity-75 text-white py-2 px-4 rounded ">&#10094;</button>
+                            <button id="siguienteBTN" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-pink-950 bg-opacity-50 hover:bg-opacity-75 text-white py-2 px-4 rounded ">&#10095;</button>
+
+                        </div>
+
+                    </div>
+                    <!--texto-->
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <h2 class="text-3xl font-bold mb-4">Experiencia Culinaria en Nuestro Hotel</h2>
+                        <p class="text-lg mb-4">Disfrute de una experiencia gastronómica única en nuestro hotel. Nuestro equipo de chefs expertos prepara deliciosos platos utilizando ingredientes frescos y locales para satisfacer todos los gustos. </p>
+                        <p class="text-lg mb-4">Desde desayunos gourmet hasta platillos tipicos de la region Santandereana, ofrecemos una variedad de opciones para cada comida del dia. </p>
+                    </div>
+                </div>               
+            </div>
+        </section>
+        <!--SERVICIO--->
+        <section>   
+            <div class="containerServicios mx-auto px-4 py-8">
+                <div class="flex flex-col lg:flex-row">
+                    <!--texto-->
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <h2 class="text-3xl font-bold mb-4">Experiencia Relajante</h2>
+                        <p class="text-lg mb-4">Relájate y reconéctate en nuestro oasis de bienestar. Disfruta de nuestro spa con tratamientos personalizados y de nuestras zonas húmedas, incluyendo piscinas y jacuzzi, el lugar perfecto para descansar y revitalizar cuerpo y mente </p>
+                    </div>
+                    <!--carusel-->
+                    <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                        <div class="relative">
+                            <div id="carruselServicios"  class="w-full max-w-xl mx-auto h-80 overflow-hidden">
+                                <div  class="carruselServicios-item active">
+                                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/316734234.jpg?k=fd44a71f9c913a0f469342908ab38af0c802b25edc34e81a0a11f44d3b78e187&o=&s=1024x" alt="">
+
+                                </div>
+                                <div  class="carruselServicios-item">
+                                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/94547650.jpg?k=1621b3383cb176c9d03f9dc8fa2db28dd034eeaf2fbd5d6d7627417eecae7a78&o=&s=1024x" alt="">
+
+                                </div>
+                                <div  class="carruselServicios-item">
+                                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/109250953.jpg?k=2ceae9c337d7bfc90a4307ae9f8743d7a77d8e9a9e1da765abbe07fbfe8ded01&o=&s=1024x" alt="">
+
+                                </div>
+                                <div  class="carruselServicios-item">
+                                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/117854088.jpg?k=651d1a36db937b5593fec6865ab3d61a056a40c204ac014230ab3a3002ed119d&o=&s=1024x" alt="">
+
+                                </div>
+
+                            </div>
+                            <button id="anterioBTNServicios" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-pink-950 bg-opacity-50 hover:bg-opacity-75 text-white py-2 px-4 rounded ">&#10094;</button>
+                            <button id="siguienteBTNServicios" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-pink-950 bg-opacity-50 hover:bg-opacity-75 text-white py-2 px-4 rounded ">&#10095;</button>
+
+                        </div>
+
+                    </div>
+
+                </div>               
+            </div>
+        </section>
+        <!-- CATALOGO
         <div id="catalogo" class="grid grid-cols-1 gap-10 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 p-6">
   
-        </div>
+        </div>  -->
 
         <!-- Botón de WhatsApp -->
         <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-5 left-5 p-3 bg-green-500 rounded-full shadow-lg hover:scale-110 transition-all duration-300" title="Chatea con nosotros en WhatsApp">
@@ -86,12 +203,20 @@
 
     </main>
     
-        <div class="bg-black p-10  flex justify-center">
-            <h3 class="text-white"> RCHotel</h3>
-            <br> <br>
-            <h3 class="text-white"> Derechos reservados </h3>
-            <h4 class="text-white">rchotel@gmail.com</h4>         
-        </div>
+        <div class="bg-zinc-950 p-10 flex justify-around">
+          <div>
+            <h3 class="text-white"> RCH</h3>
+          </div>
+          <div>
+            <h3 class="text-white">  </h3>
+          </div>
+          <div>   
+            <h4 class="text-white">rchotel@gmail.com</h4> 
+          </div>
+   
+            
+                    
+        </div> 
 
         <!--modal-->
         <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
