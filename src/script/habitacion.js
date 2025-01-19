@@ -60,9 +60,13 @@ function mostrarReserva(container, roomID, reservasActuales) {
     container.innerHTML = ""; // Limpia el contenedor antes de añadir el formulario
 
     const reservation = document.createElement("div");
-    reservation.classList.add("m-4", "bg-green-200");
+    reservation.classList.add("m-4", "bg-rose-100");
     reservation.innerHTML = `
-        <form id="formu-reservation">
+       
+        <div class="flex justify-center">
+        <h2 class="text-2xl font-bold mb-4">Reserva</h2>
+        </div>
+        <form id="formu-reservation" class="m-4">
             <label for="fechaInicio">Fecha de ingreso:</label>
             <input type="date" name="fechaInicio" id="fechaInicio" required>
             <br>
@@ -70,10 +74,14 @@ function mostrarReserva(container, roomID, reservasActuales) {
             <input type="date" name="fechaFin" id="fechaFin" required>
             <br>
             <label>
-                <input type="checkbox" id="aceptaTerminos" required> Acepto los términos y condiciones
+                <p class="m-4">La hora de entrada a su habitación es a las 14:00 horas. Si no ha llegado y realizado el check-in a las 16:00 horas, su reserva podría ser cancelada y la habitación asignada a otro huésped. </p>
+                <input   type="checkbox" id="aceptaTerminos" required> Acepto los términos y condiciones
             </label>
             <br>
-            <button type="submit">Reservar</button>
+            <di class="flex justify-center"> 
+                <button type="submit" class="bg-orange-300 rounded-lg p-1 m-1 hover:bg-orange-600 text-black m-4">Reservar</button>
+            </div>
+           
         </form>
     `;
     container.appendChild(reservation);

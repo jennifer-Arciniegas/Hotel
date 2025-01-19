@@ -52,7 +52,7 @@
             <!-- Menú desplegable para pantallas pequeñas -->
             <div class="md:hidden" id="menu" style="display: none;">
                 <ul class="flex flex-col space-y-4 p-4 text-white text-1xl mb-2">
-                    <li><button id="abriModal" class="hover:text-indigo-500">Log In</button></li>
+                    <button id="abriModal" class="text-white p-2 rounded-md">Log in</button>
                     <li><a href="./src/page/register.html" class="hover:text-indigo-500">Registro</a></li>
                     <li><a href="./src/page/reservas.html" class="hover:text-indigo-500 hidden" id="reservas">Reservas</a></li>
                     <li><a href="./src/page/contactos.html" class="hover:text-indigo-500">Contactos</a></li>
@@ -213,31 +213,20 @@
             <h4 class="text-white text-sm">rchotel@gmail.com</h4>
         </div>
     </footer>
-
-        <!--modal-->
-        <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden bg-black/50 min-h-screen">
-            <div class="flex justify-center items-center w-full h-full">
-                <div class="bg-white p-6 rounded-lg h-80 w-96">
-                    <div class="flex justify-center">
-                        <h2 class="font-semibold">Inicio de sesion</h2>
-                    </div>
-                    
-                    <form action="" id="login" class="p-10">
-                        
-                        <input type="text" name="usuario" id="usuario" placeholder="Usuario" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
-                        <br><br>
-                        
-                        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
-                        <br><br>
-                        <div class="flex justify-center">
-                            <button type="submit" id="close-modal" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Iniciar sesión</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
+<!-- Modal -->
+<div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+    <div class="flex justify-center items-center w-full h-full">
+        <div class="bg-white p-6 rounded-lg w-full max-w-sm mx-4">
+            <h2 class="text-center font-semibold text-xl mb-4">Inicio de sesión</h2>
+            <form action="" id="login" class="p-6">
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario" class="rounded-lg m-1 p-1 w-full border border-gray-300" required>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="rounded-lg m-1 p-1 w-full border border-gray-300" required>
+                <button type="submit" id="close-modal" class="w-full bg-blue-500 text-white p-2 rounded-md mt-4 hover:bg-blue-600">Iniciar sesión</button>
+            </form>
+            <button id="close-modal" class="absolute top-2 right-2 text-gray-500">X</button>
         </div>
-    
+    </div>
+</div>
 </body>
 <script src="./src/script/home.js"> </script>
 </html>

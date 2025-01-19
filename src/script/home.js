@@ -70,49 +70,47 @@ fetch("http://localhost:3000/rooms")
 })
 .catch(error => console.error('Error:', error));
 
-// --------------------------------------------------------log in 
-const openLogIn = document.getElementById("abriModal");
-const closeLogIbn = document.getElementById("close-modal");
+// Selección de elementos
+const openModal = document.getElementById("abriModal");
+const closeModal = document.getElementById("close-modal");
 const modal = document.getElementById("login-modal");
-const reserva = document.getElementById("reservas")
-const loginisio = document.getElementById("abriModal")
-//abiri modal 
-openLogIn.addEventListener("click", () =>{
-    modal.classList.remove("hidden")
-})
-// cerrar el moda 
-closeLogIbn.addEventListener("click", () => {
-    modal.classList.add("hidden")
-})
 
-//cerrar si da clik afuera dle modal
-modal.addEventListener("click", (event)=>{
-    if(event.target === modal){
-        modal.classList.add("hidden")
+// Abrir el modal
+openModal.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+});
+
+// Cerrar el modal
+closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+});
+
+// Cerrar el modal al hacer clic fuera de él
+modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.classList.add("hidden");
     }
 });
-document.getElementById("login").addEventListener("submit", async function (event){
-    event.preventDefault();//evitar que se recargue la pagina 
+
+// Iniciar sesión (esto se puede adaptar según tu backend)
+document.getElementById("login").addEventListener("submit", async function (event) {
+    event.preventDefault();
     let usuario = document.getElementById("usuario").value;
     let contraseña = document.getElementById("contraseña").value;
 
-    // verificacion con los clientes registrados 
-    try{
-        // verificar 
-        const response = await fetch(`http://localhost:3000/clients?user=${usuario}&password=${contraseña}`)
+    try {
+        const response = await fetch(`http://localhost:3000/clients?user=${usuario}&password=${contraseña}`);
         const users = await response.json();
-        if(users.length >0){
-            //alert("inicio de sesion exitoso")
-            reserva.classList.remove("hidden")
-            loginisio.classList.add("hidden")
-        }else{
-            alert("usuario y contraseña no validos")
+        if (users.length > 0) {
+            alert("Inicio de sesión exitoso");
+        } else {
+            alert("Usuario o contraseña incorrectos");
         }
+    } catch (error) {
+        console.error("Error al iniciar sesión", error);
     }
-    catch (error){ console.error("error al iniciar sesion ", error);
-        
-    }
-})
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
    
