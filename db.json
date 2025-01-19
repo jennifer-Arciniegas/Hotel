@@ -7,7 +7,7 @@
       "Disponible": "Disponible",
       "precioNoche": 150000,
       "NumPersonas": 2,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -35,7 +35,7 @@
       "Disponible": "Disponible",
       "precioNoche": 100000,
       "NumPersonas": 1,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -57,7 +57,7 @@
       "Disponible": "Disponible",
       "precioNoche": 350000,
       "NumPersonas": 2,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -85,7 +85,7 @@
       "Disponible": "Disponible",
       "precioNoche": 100000,
       "NumPersonas": 2,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -113,7 +113,7 @@
       "Disponible": "Disponible",
       "precioNoche": 100000,
       "NumPersonas": 2,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -135,7 +135,7 @@
       "Disponible": "Disponible",
       "precioNoche": 200000,
       "NumPersonas": 2,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -157,7 +157,7 @@
       "Disponible": "Disponible",
       "precioNoche": 200000,
       "NumPersonas": 2,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -179,7 +179,7 @@
       "Disponible": "Disponible",
       "precioNoche": 200000,
       "NumPersonas": 2,
-      "ubicacion": "Albania, Santander",
+      "ubicacion": "Mesa de los Santos, Santander",
       "servicios": {
         "internet": true,
         "minibar": false,
@@ -203,22 +203,6 @@
       "nombre": "Jennifer",
       "apellido": "Arcs",
       "email": "jenni@gmail.com"
-    },
-    {
-      "user": "jjeenny",
-      "password": "123",
-      "nombre": "jennifer",
-      "apellido": "Arciniegas",
-      "email": "jenniferpaola.arciniegas@gmail.com",
-      "id": 2
-    },
-    {
-      "user": "andre",
-      "password": "234",
-      "nombre": "andre",
-      "apellido": "daid",
-      "email": "andre@gmail.com",
-      "id": 3
     }
   ],
   "profile": {
