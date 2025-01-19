@@ -72,8 +72,8 @@
       },
       "reservas": [
         {
-          "inicio": "2025-01-18",
-          "fin": "2025-01-20",
+          "inicio": "2025-01-22",
+          "fin": "2025-01-25",
           "clienteId": 1
         }
       ]
@@ -98,7 +98,13 @@
         "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591648893.jpg?k=45b917c59c014c4d3619f7dae7af8dd2f8fb81c19a56cd4e58bedd52b78260fb&o=&hp=1",
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527207384.jpg?k=9648e08ffd5b3a865bce160b8e4eee7fd8d6e2275881a4e3e6fbd7ef30641e12&o=&hp=1"
       },
-      "reservas": []
+      "reservas": [
+        {
+          "inicio": "2025-01-20",
+          "fin": "2025-01-22",
+          "clienteId": 1
+        }
+      ]
     },
     {
       "id": 5,
