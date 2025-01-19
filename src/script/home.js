@@ -102,8 +102,8 @@ document.getElementById("login").addEventListener("submit", async function (even
         const response = await fetch(`http://localhost:3000/clients?user=${usuario}&password=${contraseña}`)
         const users = await response.json();
         if(users.length >0){
-            //alert("inicio de sesion exitoso")
-            reserva.classList.remove("hidden")
+         
+            reserva.classList.remove("hidden") //debe funcionar para que vea esa opcion 
             loginisio.classList.add("hidden")
         }else{
             alert("usuario y contraseña no validos")

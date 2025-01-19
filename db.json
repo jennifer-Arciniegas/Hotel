@@ -98,13 +98,7 @@
         "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591648893.jpg?k=45b917c59c014c4d3619f7dae7af8dd2f8fb81c19a56cd4e58bedd52b78260fb&o=&hp=1",
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/527207384.jpg?k=9648e08ffd5b3a865bce160b8e4eee7fd8d6e2275881a4e3e6fbd7ef30641e12&o=&hp=1"
       },
-      "reservas": [
-        {
-          "inicio": "2025-01-18",
-          "fin": "2025-01-23",
-          "clienteId": 1
-        }
-      ]
+      "reservas": []
     },
     {
       "id": 5,
@@ -202,8 +196,23 @@
       "password": "123",
       "nombre": "Jennifer",
       "apellido": "Arcs",
-      "email": "jenni@gmail.com",
-      "token": "321"
+      "email": "jenni@gmail.com"
+    },
+    {
+      "user": "jjeenny",
+      "password": "123",
+      "nombre": "jennifer",
+      "apellido": "Arciniegas",
+      "email": "jenniferpaola.arciniegas@gmail.com",
+      "id": 2
+    },
+    {
+      "user": "andre",
+      "password": "234",
+      "nombre": "andre",
+      "apellido": "daid",
+      "email": "andre@gmail.com",
+      "id": 3
     }
   ],
   "profile": {
