@@ -20,7 +20,13 @@
         "vista": "https://www.momondo.com.co/rimg/himg/88/fb/79/expediav2-123248-3591475457-659215.jpg?width=968&height=607&crop=true",
         "baño": "https://www.momondo.com.co/rimg/himg/4f/20/b6/expedia_group-123248-f69021-030230.jpg?width=968&height=607&crop=true"
       },
-      "reservas": []
+      "reservas": [
+        {
+          "inicio": "2025-01-19",
+          "fin": "2025-01-22",
+          "clienteId": 1
+        }
+      ]
     },
     {
       "id": 2,
@@ -42,13 +48,7 @@
         "vista": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591648966.jpg?k=1a90237b228e476b9d3169d2b2890c7056e3c4a8d2151bbc17c9bedf02eb22a6&o=&hp=1",
         "baño": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591649752.jpg?k=dd338c1c5f2e8f56f52d0c5605adc0dece4181326ebf8dcd97d4b1fc2dc3fe4e&o=&hp=1"
       },
-      "reservas": [
-        {
-          "inicio": "2025-01-19",
-          "fin": "2025-01-20",
-          "clienteId": 1
-        }
-      ]
+      "reservas": []
     },
     {
       "id": 3,

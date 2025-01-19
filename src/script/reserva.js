@@ -50,35 +50,115 @@ CperFiltro.addEventListener('change', () => {
 //--------------------------------ver reservas
 const verReservas = document.getElementById("verReservasRealizadas");
 const espacioR = document.getElementById("espacioReservas");
-verReservas.addEventListener("click", () =>{
 
-   const tablaR = document.createElement("table")
-   tablaR.classList.add("table-auto", "n-4")
-   tablaR.innerHTML = `
-            <thead class="bg-green-300 "> 
-                <th>Habitacion</th>
-                <th>Fecha de inicio</th>
-                <th>Fecha salida</th>
-                <th>Valor por noche</th>
-                <th>Valor total</th>
-                <th></th>
-            </thead>
-             <tbody>
+verReservas.addEventListener("click", async () => {
+
+    espacioR.innerHTML = "";     // Limpiar datos anteriores
+
+    const tablaR = document.createElement("div");
+    tablaR.classList.add("overflow-x-auto");
+    tablaR.innerHTML = `
+        <table class="min-w-full table-auto m-4 w-full border border-orange-300">
+            <thead class="bg-orange-300">
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td> <button class="bg-rose-300 rounded-lg hover:bg-rose-500 p-1 m-1">Cancelar</button></td>
+                    <th class="p-2 border">Habitación</th>
+                    <th class="p-2 border">Fecha de inicio</th>
+                    <th class="p-2 border">Fecha de salida</th>
+                    <th class="p-2 border">Valor por noche</th>
+                    <th class="p-2 border">Valor total</th>
+                    <th class="p-2 border">Acciones</th>
                 </tr>
+            </thead>
+            <tbody id="reservaTabla" class="text-center">
             </tbody>
-   `;
-    fetch(`http://localhost:3000/rooms/reservas`)
+        </table>
+    `;
 
-   
-   espacioR.appendChild(tablaR)
+    espacioR.appendChild(tablaR);
 
-})
+    try {
+        const response = await fetch(`http://localhost:3000/rooms`);
+        const rooms = await response.json();
 
+        const tBody = document.getElementById("reservaTabla");
+
+        // Recorrer habitaciones y sus reservas
+        rooms.forEach((habitacion) => {
+            if (habitacion.reservas && habitacion.reservas.length > 0) {
+                habitacion.reservas.forEach((reserva, index) => {
+                    const { inicio, fin } = reserva;
+                    const precioNoche = habitacion.precioNoche;
+                    const diasReservados = calcularDias(inicio, fin);
+                    const valorTotal = diasReservados * precioNoche;
+
+                    // Crear fila de la tabla
+                    const fila = document.createElement("tr");
+                    fila.innerHTML = `
+                        <td class="p-2 border">${habitacion.name}</td>
+                        <td class="p-2 border">${inicio}</td>
+                        <td class="p-2 border">${fin}</td>
+                        <td class="p-2 border">${precioNoche.toLocaleString("es-CO", { style: "currency", currency: "COP" })}</td>
+                        <td class="p-2 border">${valorTotal.toLocaleString("es-CO", { style: "currency", currency: "COP" })}</td>
+                        <td class="p-2 border">
+                            <button class="bg-red-500 text-white rounded-lg p-1 hover:bg-red-700 cancelar-reserva" 
+                                data-habitacion-id="${habitacion.id}" 
+                                data-reserva-index="${index}">
+                                Cancelar reserva
+                            </button>
+                        </td>
+                    `;
+
+                    tBody.appendChild(fila);
+                });
+            }
+        });
+
+        document.querySelectorAll(".cancelar-reserva").forEach((button) => {
+            button.addEventListener("click", async (e) => {
+                const habitacionId = e.target.getAttribute("data-habitacion-id");
+                const reservaIndex = e.target.getAttribute("data-reserva-index");
+
+                await cancelarReserva(habitacionId, reservaIndex);
+            });
+        });
+    } catch (error) {
+        console.error("Error al cargar las reservas:", error);
+    }
+});
+
+// Función para cancelar una reserva
+async function cancelarReserva(habitacionId, reservaIndex) {
+    try {
+        // buscar la reserva
+        const response = await fetch(`http://localhost:3000/rooms/${habitacionId}`);
+        const habitacion = await response.json();
+        const nuevasReservas = habitacion.reservas.filter((_, index) => index != reservaIndex);
+
+        // Actualizar la habitación para asi borrar la reserva
+        const updateResponse = await fetch(`http://localhost:3000/rooms/${habitacionId}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ reservas: nuevasReservas }),
+        });
+
+        if (updateResponse.ok) {
+            alert("Reserva cancelada correctamente.");
+            verReservas.click(); // Recargar las reservas
+        } else {
+            throw new Error("Error al actualizar la habitación.");
+        }
+    } catch (error) {
+        console.error("Error al cancelar la reserva:", error);
+    }
+}
+
+// Función para calcular la diferencia de días de reserva
+function calcularDias(fechaInicio, fechaFin) {
+    const inicio = new Date(fechaInicio);
+    const fin = new Date(fechaFin);
+    const diferenciaTiempo = fin - inicio;
+    return Math.ceil(diferenciaTiempo / (1000 * 60 * 60 * 24)); // Convertir de milisegundos a días
+}
 
