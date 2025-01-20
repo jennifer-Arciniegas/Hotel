@@ -19,7 +19,7 @@
                     <li><button id="abriModal" class="hover:text-indigo-500">Log In</button></li>
                     <li><a href="./register.html" class="hover:text-indigo-500">Registro</a></li>
                     <li><a href="./reservas.html" class="hover:text-indigo-500 hidden"  id="reservas">Reservas</a></li>
-                    <li><a href="./contactos.html" class="hover:text-indigo-500">Contactos</a></li>
+                 
                 </ul>
             </div>
     
@@ -38,7 +38,7 @@
                 <li><button id="abriModal" class="hover:text-indigo-500">Log In</button></li>
                 <li><a href="./register.html" class="hover:text-indigo-500">Registro</a></li>
                 <li><a href="./reservas.html" class="hover:text-indigo-500 hidden" id="reservas">Reservas</a></li>
-                <li><a href="./contactos.html" class="hover:text-indigo-500">Contactos</a></li>
+               
             </ul>
         </div>
     </nav>
@@ -79,29 +79,25 @@
             </footer>
 
 
-            <!--modal-->
-            <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
-                <div class="flex justify-center items-center w-full h-full">
-                    <div class="bg-white p-6 rounded-lg h-80 w-96">
-                        <div class="flex justify-center">
-                            <h2 class="font-semibold">Inicio de sesion</h2>
-                        </div>
-                        
-                        <form action="" id="login" class="p-10">
-                            
-                            <input type="text" name="usuario" id="usuario" placeholder="Usuario" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
-                            <br><br>
-                            
-                            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="rounded-lg m-1 p-1 focus:bg-white focus:border-purple-500 focus:outline-none border border-gray-300" required>
-                            <br><br>
-                            <div class="flex justify-center">
-                                <button type="submit" id="close-modal" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Iniciar sesión</button>
-                            </div>
-                        </form>
-                    </div>
-    
+            <!-- Modal -->
+        <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden ">
+            <div class="flex justify-center items-center h-full">
+                <div class="bg-white p-6 rounded-lg w-full max-w-sm mx-4">
+                    <h2 class="text-center text-xl font-semibold mb-4">Inicio de Sesión</h2>
+                    <form id="login">
+                        <input type="text" id="usuario" placeholder="Usuario" required
+                            class="w-full p-2 mb-4 border rounded-md focus:ring-2 focus:ring-blue-500">
+                        <input type="password" id="contraseña" placeholder="Contraseña" required
+                            class="w-full p-2 mb-4 border rounded-md focus:ring-2 focus:ring-blue-500">
+                        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700">
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                    <button id="close-modal" class="absolute top-4 right-4 text-gray-500">X</button>
                 </div>
             </div>
+        </div>
+
 </body>
 <script src="../script/contactos.js"></script>
 </html>

@@ -8,46 +8,30 @@ menuToggle.addEventListener('click', () => {
 });
 
 
-// --------------------------------------------------------log in 
-const openLogIn = document.getElementById("abriModal");
-const closeLogIbn = document.getElementById("close-modal");
-const modal = document.getElementById("login-modal");
-const reserva = document.getElementById("reservas")
-const loginisio = document.getElementById("abriModal")
-//abiri modal 
-openLogIn.addEventListener("click", () =>{
-    modal.classList.remove("hidden")
-})
-// cerrar el moda 
-closeLogIbn.addEventListener("click", () => {
-    modal.classList.add("hidden")
-})
+// Manejar el inicio de sesión
+// Manejar el inicio de sesión
+loginForm.addEventListener("submit", async (event) => {
+    event.preventDefault(); // Evitar recarga
 
-//cerrar si da clik afuera dle modal
-modal.addEventListener("click", (event)=>{
-    if(event.target === modal){
-        modal.classList.add("hidden")
+    const username = document.getElementById("usuario").value;
+    const password = document.getElementById("contraseña").value;
+
+    try {
+        const response = await fetch(`https://serverhotel-jnf0.onrender.com/clients?user=${username}&password=${password}`);
+        const users = await response.json();
+
+        if (users.length > 0) {
+            loginModal.classList.add("hidden");
+            registro.classList.add("hidden")
+            reserva.classList.remove("hidden")
+            registroSmall.classList.add("hidden")
+            reservaSmall.classList.remove("hidden")
+            loginModal.style.display = "none";
+            document.getElementById("reservas").classList.remove("hidden"); // Mostrar sección de reservas
+        } else {
+            alert("Usuario o contraseña incorrectos");
+        }
+    } catch (error) {
+        console.error("Error al iniciar sesión", error);
     }
 });
-document.getElementById("login").addEventListener("submit", async function (event){
-    event.preventDefault();//evitar que se recargue la pagina 
-    let usuario = document.getElementById("usuario").value;
-    let contraseña = document.getElementById("contraseña").value;
-
-    // verificacion con los clientes registrados 
-    try{
-        // verificar 
-        const response = await fetch(`https://serverhotel-jnf0.onrender.com/clients?user=${usuario}&password=${contraseña}`)
-        const users = await response.json();
-        if(users.length >0){
-            //alert("inicio de sesion exitoso")
-            reserva.classList.remove("hidden")
-            loginisio.classList.add("hidden")
-        }else{
-            alert("usuario y contraseña no validos")
-        }
-    }
-    catch (error){ console.error("error al iniciar sesion ", error);
-        
-    }
-})
