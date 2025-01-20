@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Consultar los datos de la habitación desde la API
-    fetch(`https://hotelrcarmen.onrender.com/rooms/${idroom}`)
+    fetch(`https://serverhotel-jnf0.onrender.com/rooms/${idroom}`)
         .then((response) => {
             if (!response.ok) {
                 throw new Error("No se pudo obtener los datos de la habitación.");
@@ -110,7 +110,7 @@ function mostrarReserva(container, roomID, reservasActuales) {
 
 // Actualizar la reserva en el servidor
 function actualizarReserva(roomID, nuevasReservas) {
-    fetch(`https://hotelrcarmen.onrender.com/rooms/${roomID}`, {
+    fetch(`https://serverhotel-jnf0.onrender.com/rooms/${roomID}`, {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json",

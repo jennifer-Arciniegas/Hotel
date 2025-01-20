@@ -9,7 +9,7 @@ function registerUser(){
             apellido: document.getElementById("lastName").value,
             email: document.getElementById("email").value
         };
-        fetch("https://hotelrcarmen.onrender.com/clients/", {
+        fetch("https://serverhotel-jnf0.onrender.com/clients/", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json",

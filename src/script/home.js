@@ -44,7 +44,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 //-------------------------------------- agregar al catalogo las habitaciones
-fetch("https://hotelrcarmen.onrender.com/rooms")
+fetch("https://serverhotel-jnf0.onrender.com/rooms")
 .then(response => response.json())
 .then(data => {
     console.log(data);
@@ -109,7 +109,7 @@ loginForm.addEventListener("submit", async (event) => {
     const password = document.getElementById("contraseña").value;
 
     try {
-        const response = await fetch(`https://hotelrcarmen.onrender.com/clients?user=${username}&password=${password}`);
+        const response = await fetch(`https://serverhotel-jnf0.onrender.com/clients?user=${username}&password=${password}`);
         const users = await response.json();
 
         if (users.length > 0) {

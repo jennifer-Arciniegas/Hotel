@@ -12,7 +12,7 @@ menuToggle.addEventListener('click', () => {
 const CperFiltro = document.getElementById("BedFilter")
 CperFiltro.addEventListener('change', () => {
         const numperso = CperFiltro.value;
-        fetch(`https://hotelrcarmen.onrender.com/rooms?NumPersonas=${numperso}`)
+        fetch(`https://serverhotel-jnf0.onrender.com/rooms?NumPersonas=${numperso}`)
     .then(response => response.json())
     .then(data => {
         console.log(data);
@@ -77,7 +77,7 @@ verReservas.addEventListener("click", async () => {
     espacioR.appendChild(tablaR);
 
     try {
-        const response = await fetch(`https://hotelrcarmen.onrender.com/rooms`);
+        const response = await fetch(`https://serverhotel-jnf0.onrender.com/rooms`);
         const rooms = await response.json();
 
         const tBody = document.getElementById("reservaTabla");
@@ -130,12 +130,12 @@ verReservas.addEventListener("click", async () => {
 async function cancelarReserva(habitacionId, reservaIndex) {
     try {
         // buscar la reserva
-        const response = await fetch(`https://hotelrcarmen.onrender.com/rooms/${habitacionId}`);
+        const response = await fetch(`https://serverhotel-jnf0.onrender.com/rooms/${habitacionId}`);
         const habitacion = await response.json();
         const nuevasReservas = habitacion.reservas.filter((_, index) => index != reservaIndex);
 
         // Actualizar la habitación para asi borrar la reserva
-        const updateResponse = await fetch(`https://hotelrcarmen.onrender.com/rooms/${habitacionId}`, {
+        const updateResponse = await fetch(`https://serverhotel-jnf0.onrender.com/rooms/${habitacionId}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
