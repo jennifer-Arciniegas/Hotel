@@ -8,7 +8,38 @@ menuToggle.addEventListener('click', () => {
 });
 
 
-// Manejar el inicio de sesión
+
+// Elementos del modal
+const openLogInButtons = document.querySelectorAll("#abriModal, #open-modal-mobile"); // Botones para abrir modal
+const closeModalButton = document.getElementById("close-modal");
+const loginModal = document.getElementById("login-modal");
+const loginForm = document.getElementById("login");
+const registro = document.getElementById("registo")
+const reserva = document.getElementById("reservas")
+const registroSmall = document.getElementById("regiSmall")
+const reservaSmall = document.getElementById("reservaSamall")
+// Abrir modal
+openLogInButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        loginModal.classList.remove("hidden"); // Mostrar modal
+        loginModal.style.display = "flex"; // Centrar el modal
+    });
+});
+
+// Cerrar modal con botón
+closeModalButton.addEventListener("click", () => {
+    loginModal.classList.add("hidden");
+    loginModal.style.display = "none";
+});
+
+// Cerrar modal al hacer clic fuera del contenido
+loginModal.addEventListener("click", (event) => {
+    if (event.target === loginModal) {
+        loginModal.classList.add("hidden");
+        loginModal.style.display = "none";
+    }
+});
+
 // Manejar el inicio de sesión
 loginForm.addEventListener("submit", async (event) => {
     event.preventDefault(); // Evitar recarga
