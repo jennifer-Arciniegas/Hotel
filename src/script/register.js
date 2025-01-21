@@ -18,7 +18,7 @@ function registerUser(){
         })
         .then((Response)=> Response.json())
         .then((data) => {
-            window.location.replace("/index.html");
+            window.location.replace("https://jennifer-arciniegas.github.io/Hotel/");
 
         })
         .catch((error) => alert("error al crear usuario") + error)
